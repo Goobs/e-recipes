@@ -1,0 +1,8 @@
+django<1.10
+django-grappelli==2.8.1
+pytils
+Pillow
+django-crispy-forms
+requests
+jsonfield
+MySQL-python

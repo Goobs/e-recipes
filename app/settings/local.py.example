@@ -1,0 +1,19 @@
+# -*- coding: utf-8 -*-
+from base import *
+from datetime import timedelta
+
+DEBUG = True
+TEMPLATE_DEBUG = True
+
+SECRET_KEY = 'place random string here'
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, '..', 'app.db'),
+    }
+}
+
+
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+
