@@ -6,3 +6,4 @@ django-crispy-forms
 requests
 jsonfield
 MySQL-python
+progressbar==2.3

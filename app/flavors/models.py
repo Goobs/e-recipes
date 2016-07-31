@@ -26,6 +26,7 @@ class Flavor(models.Model):
     class Meta:
         verbose_name = _('flavor')
         verbose_name_plural = _('flavors')
+        ordering = ['name']
 
     def __unicode__(self):
         return self.name
@@ -36,7 +37,7 @@ class Review(models.Model):
     author_name = models.CharField(max_length=50, blank=True, null=True,
                                    verbose_name=_('author name'))
     content = models.TextField(blank=True, null=True, verbose_name=_('content'))
-    favorite_percentage = models.FloatField(blank=True, null=True,
+    favorite_percentage = models.CharField(blank=True, null=True, max_length=20,
                                             verbose_name=_('favorite percentage'))
 
     class Meta:
